@@ -11,7 +11,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  /* gap: 20px; */
   padding: 20px 10px;
 }
 
@@ -21,13 +21,51 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   padding: 10px 20px;
+  margin: 0;
 }
-.menu-achiev {
+.menu-achiev,
+.achiev-grp {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 30px;
+  gap: 20px;
   align-items: center;
+}
+.achiev-grp {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 20px;
+  margin: 0;
+  /* overflow: hidden; */
+  /* border: 1px solid rgb(188, 18, 18); */
+}
+
+.card-achiev {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* justify-content: center; */
+  width: 300px;
+  height: 280px;
+  border-radius: 8px;
+  border: 1px solid rgb(213, 213, 213);
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+.card-achiev h2 {
+  font-size: 1rem;
+  padding: 8px 12px;
+}
+.card-achiev h4 {
+  font-size: 0.8rem;
+  color: rgb(150, 149, 149);
+  padding: 0px 12px;
+}
+
+.card-achiev img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0px;
 }
