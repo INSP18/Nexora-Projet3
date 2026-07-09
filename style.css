@@ -1,0 +1,118 @@
+:root {
+  --bleu-principal: #2f5bff;
+  --bleu-fonce: #0a0e27;
+  --texte-gris: #5b6272;
+  --fond-clair: #f5f7ff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #eef1fb 0%, #f7f8fd 100%);
+  color: var(--bleu-fonce);
+}
+
+/* ------------------------- */
+
+.section-equipe {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 80px 20px;
+}
+
+.titre-principal {
+  font-size: 2.5rem;
+  /* font-size: 2.75rem; */
+  line-height: 1.15;
+  font-weight: 800;
+  color: var(--bleu-fonce);
+}
+
+.titre-principal .accent-bleu {
+  /* font-size: 3rem; */
+  color: var(--bleu-principal);
+}
+
+.texte-description {
+  margin-top: 20px;
+  color: var(--texte-gris);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  max-width: 460px;
+}
+.groupe-boutons {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.bouton-principal,
+.bouton-secondaire {
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: transform 0.15s ease;
+}
+.bouton-principal {
+  background-color: var(--bleu-principal);
+  color: #fff;
+}
+
+.bouton-secondaire {
+  background-color: transparent;
+  border-color: var(--bleu-principal);
+  color: var(--bleu-principal);
+}
+
+.bouton-principal:hover,
+.bouton-secondaire:hover {
+  transform: translateY(-2px);
+}
+
+/* ------------------------------- */
+
+@media screen and (min-width: 700px) {
+  .titre-principal .accent-bleu {
+    font-size: 4rem;
+    color: var(--bleu-principal);
+  }
+  .colonne-texte {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .titre-principal {
+    font-size: 3rem;
+  }
+  .texte-description {
+    font-size: 1rem;
+  }
+  .bouton-principal,
+  .bouton-secondaire {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1028px) {
+  .titre-principal .accent-bleu {
+    font-size: 5rem;
+  }
+  .texte-description {
+    font-size: 1rem;
+  }
+}
