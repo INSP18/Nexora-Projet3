@@ -16,6 +16,63 @@ body {
   color: var(--bleu-fonce);
 }
 
+/* ---------------------------------- */
+.header {
+  background-color: #fff;
+  padding: 20px;
+}
+.logo {
+  /* display: flex; */
+  text-align: center;
+  align-items: center;
+  font-weight: 900;
+}
+.logo span {
+  padding: 1px 7px;
+  margin: 2px;
+  align-items: center;
+  border-radius: 5px;
+  background-color: var(--bleu-principal);
+  color: var(--fond-clair);
+  font-weight: 900;
+}
+header a {
+  text-decoration: none;
+  color: var(--texte-gris);
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+.navbar {
+  display: none;
+}
+.nav-links a:hover {
+  text-decoration: underline;
+  font-weight: 700;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  align-items: center;
+}
+.btn-primary {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--fond-clair);
+  color: var(--bleu-principal);
+}
+.btn-primary:hover {
+  background-color: var(--bleu-principal);
+  color: #fff;
+}
+.btn-primary {
+  font-size: 0.8rem;
+}
 /* ------------------------- */
 
 .section-equipe {
@@ -85,7 +142,52 @@ body {
 
 /* ------------------------------- */
 
+.footer {
+  background-color: #0a1735;
+  color: #fff;
+  padding: 20px;
+  font-size: 0.8rem;
+}
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-links a:hover {
+  font-weight: 700;
+  text-decoration: underline;
+}
+.footer-links ul li {
+  list-style: none;
+}
+.footer-about {
+  display: none;
+}
+.footer-services {
+  display: none;
+}
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+  border-top: 1px solid var(--bleu-fonce);
+}
+
+/* ----------------------------------------------- */
+@media screen and (min-width: 320px) {
+  .navbar {
+    display: none;
+  }
+  .btn-primary {
+    font-size: 0.8rem;
+  }
+}
+
 @media screen and (min-width: 700px) {
+  .navbar {
+    display: flex;
+  }
   .titre-principal .accent-bleu {
     font-size: 4rem;
     color: var(--bleu-principal);
@@ -106,13 +208,39 @@ body {
   .bouton-secondaire {
     font-size: 1.2rem;
   }
+  .footer-services {
+    display: block;
+    text-align: start;
+  }
+  .footer-services ul {
+    text-decoration: none;
+    list-style: none;
+  }
 }
 
-@media screen and (min-width: 1028px) {
+@media screen and (min-width: 1024px) {
   .titre-principal .accent-bleu {
     font-size: 5rem;
   }
   .texte-description {
     font-size: 1rem;
+  }
+  .footer-services {
+    display: block;
+  }
+  .footer-services ul {
+    text-decoration: none;
+    list-style: none;
+  }
+  .footer-about {
+    display: block;
+    text-align: start;
+  }
+  .footer-about p {
+    color: var(--texte-gris);
+    margin-top: 10px;
+    font-size: 0.8rem;
+    /* padding: 0px 120px 0px 5px; */
+    width: 500px;
   }
 }
